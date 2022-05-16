@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/week_01/day_02/intro_to_git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week_01/day_02/terminal_commands" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week_02/lab-arraylists-loops/start_code_lab_arraylists_loops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week_02/lab-artgallery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week_02/lab-classes-concepts" vcs="Git" />
+  </component>
+</project>
