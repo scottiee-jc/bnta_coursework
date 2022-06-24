@@ -1,0 +1,12 @@
+.menu__button{
+    background-color: rgb(143, 216, 240);
+    height: 35px;
+    width: 35px;
+    border-color: aliceblue;
+}
+
+.menu__button--red{
+    background-color: red;
+}
+
+/* 

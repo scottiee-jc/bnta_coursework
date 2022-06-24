@@ -1,0 +1,32 @@
+.body__div{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+margin-bottom: 10px;
+}
+
+/* 10 boxes stacked on top of each other still */
+
+.body__div--wide{
+    flex: 50%;
+}
+
+.body__div--first{
+    order: -1;
+}
+
+.body__div--last{
+    order: 2;
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* using display to specify how we want to display our body */
+/* using flex, everything below the body will be positioned according to flexbox */
+/* as you resize your screen, this will resize the boxes according to the current screen size */
+/* flex-flow a mix of flex-direction and flex-wrap, allows the webpage to dynamically shift elements down the page, so as the screen is minimised, the boxes will move down to stay the same shape, keeping the information (text) it holds in place */
+/* justify-content utilises flexbox  */

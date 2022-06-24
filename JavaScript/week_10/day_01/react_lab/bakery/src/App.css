@@ -1,0 +1,58 @@
+/* .body {
+display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: #61dafb;
+}
+
+.recipeDesign {
+  background-color: lightskyblue;
+  height: 300px;
+  width: 350px;
+  margin-bottom: 10px;
+  border: 1px whitesmoke;
+  text-align: center;
+}
+
+.recipeText {
+  color: antiquewhite;
+}
+
+.titleBox {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: rgb(187, 217, 243);
+  width: 750px;
+  padding: 50px 0 50px;
+}
+
+.title {
+  color: antiquewhite;
+}
+
+.buttonDesign {
+  background-color: rgb(187, 217, 243);
+  width: 150px;
+  flex-flow: row wrap;
+  border: 2px solid antiquewhite;
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 0 10px;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: rgb(176, 211, 241);
+  width: 750px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */

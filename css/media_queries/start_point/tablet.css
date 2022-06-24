@@ -1,0 +1,14 @@
+@media (min-width: 720px) {
+
+    aside {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer{
+        
+    }
+}
+
+/* @media flags everything in the brackets to only be applicable when certain conditions are met */
+/* very similar in appearance to a java if statement */

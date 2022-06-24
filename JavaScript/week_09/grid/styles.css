@@ -1,0 +1,43 @@
+div{
+    /* height: 100px; */
+    border: 1px solid black;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'sidebar main main'
+    'footer main main';
+}
+
+/* grids have to be contiguous - each row must have the same number of columns */
+
+.header{
+    grid-area: header;
+    background-color: aliceblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightblue;
+}
+
+.main{
+    grid-area: main;
+    background-color: mediumturquoise;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+/* grid is less dynamic than flex but we get more flexibility with the exact position on the page */
+/* hash # indicates the selector setting is from an id - in the example, the specific grid-container is using grid as a display */
+/* we need to specify grid-template-areas to say what specific areas should look like on the screen */
+/* telling us that we will have:
+- a block of header content 
+- a block of sidebar content in the main
+- a block of footer content in the footer
+- 3 x 2 format - specifying 3 rows of information with two columns in each row */
