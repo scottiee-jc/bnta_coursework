@@ -20,7 +20,9 @@ const UserDetails = () => {
 
   return (
     <div>
-      <p>User: {user}</p>                                               {/* user data inserted into this paragraph*/}
+      <h2>Welcome back, {user}</h2>
+      <h4>Account Details</h4>                                               {/* user data inserted into this paragraph*/}
+      <p>User Name: {user}</p>
       <button onClick={() => setUser(null)}>Logout</button>             {/* onClick uses an argument that assigns setUser to null when logout is pressed */}
     </div>
   )
@@ -28,21 +30,29 @@ const UserDetails = () => {
 
 const Login = () => {
 
-  const { user, setUser } = useContext(UserContext)
+  const { user, setUser} = useContext(UserContext)
+
   // also used in, and linked to, the component UserDetails
 
   const [loginName, setLoginName] = useState('')
+  const [password, setPassword] = useState('')
   // useState sets the state of the object we have defined to that of an empty string
   // this is the starting point so that the data can be inserted as a string into the object
 
   return (
     <div>
+      <h2>Login</h2>
       <input 
         value={loginName}                                              // value of the input set to the loginName variable
         onChange={e => setLoginName(e.target.value)}                   // onChange specifies that whatever is input should be stored in the function setLoginName
-        placeholder="Login Name"
+        placeholder="UserName"
       />
-      <button onClick={() => setUser(loginName)}>Login</button>        {/* onClick uses an argument that passes the loginName data to the setUser function -  when the button is clicked, the data is transferred and "set"*/}
+      <input 
+        value={password}                                              // value of the input set to the loginName variable
+        onChange={e => setPassword(e.target.value)}                   // onChange specifies that whatever is input should be stored in the function setLoginName
+        placeholder="Password"
+      />
+      <button onClick={() => setUser([loginName, password])}>Login</button>        {/* onClick uses an argument that passes the loginName data to the setUser function -  when the button is clicked, the data is transferred and "set"*/}
     </div>
   )
 }
@@ -55,7 +65,6 @@ function App() {
   return (
     <UserContext.Provider value={{ user, setUser }}>                   {/* UserContext.Provider uses the createContext hook wraps the application body in this */}
       <div className="App">                                            {/* also sets the value of the UserContext function to user and setUser so that the app */}
-        <h2>React Hooks</h2>
         {user ? <UserDetails /> : <Login />}
       </div>
     </UserContext.Provider>
