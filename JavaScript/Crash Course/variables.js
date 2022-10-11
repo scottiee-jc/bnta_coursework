@@ -74,5 +74,12 @@ var club = {
     }
 };
 
+// to get specific values from an object
+console.log(club.players.goalkeepers);
+// to get the whole object 
+console.log(Object.values(club));
+// stringify to print whole JSON object to a string in console
+console.log(JSON.stringify(club));
 
-console.log(club);
+
+
