@@ -1,3 +1,5 @@
+package echo_client_server;
+
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.SSLSocket;
 import java.io.BufferedReader;
