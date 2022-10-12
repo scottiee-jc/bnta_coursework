@@ -1,14 +1,12 @@
 package inheritance_and_interfaces;
 
-public class Sedan implements Automobile {
+public class Sedan extends ConceptCar {
 
-    private String make;
-    private String model;
     private Double price;
 
     public Sedan(String make, String model, Double price) {
-        this.make = make;
-        this.model = model;
+        super (make, model);
+        // inherits from its abstract super, ConceptCar, which in turn implements Automobile
         this.price = price;
     }
 
@@ -21,25 +19,20 @@ public class Sedan implements Automobile {
 
     @Override
     public String toString() {
-        return "Sedan{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", price='" + price + '\'' +
-                '}';
+        return String.format(
+        "Make: %s, Model: %s, Price: %s", getMake(), getModel(), price);
     }
 
     @Override
-    public String getMake() {
-        return make;
+    public String getReleaseDate() {
+        return Automobile.getFormattedCalenderString();
     }
-
-    @Override
-    public String getModel() {
-        return model;
-    }
+    // because its super implements automobile, we can still access its methods through the override method
+    // it has to implement this because, through inheritance, it implements automobile
 
     @Override
     public Double getPrice() {
         return price;
     }
+
 }
